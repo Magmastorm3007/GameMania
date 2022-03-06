@@ -1,0 +1,39 @@
+.navbar{
+    background-color: rgb(124, 42, 42);
+}
+.title{
+    color: whitesmoke;
+    list-style: none;
+    text-decoration: none;
+    font-size: large;
+    text-shadow: tomato;
+}
+.pg{
+    padding: 5px;
+    color: thistle;
+    text-decoration: none;
+}
+.pg:hover{
+    color: white;
+}
+.td{
+    align-items: center;
+}
+
+body {  
+    color: #4b3537;  
+    }  
+    .card {  
+  position: relative;  
+  display: -ms-flexbox;  
+  display: flex;  
+  -ms-flex-direction: column;  
+  flex-direction: column;  
+  min-width: 0;  
+  word-wrap: break-word;  
+  background-color: #f8f9fa;  
+  background-clip: border-box;  
+  border: 1px solid rgba(0,0,0,.125);  
+  border-radius: .15rem;  
+}  
+
