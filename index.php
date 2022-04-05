@@ -69,6 +69,7 @@ include("fetch.php");
                     <div class="card-body align-items-center d-flex justify-content-center">
                       <h3>  <?php echo $data['name']??''; ?></h3>
                       </div>
+                      <p class="card-text"><?php echo $data['sd']??''; ?> </p>
                     <p class="card-text"> Check out the reviews from our users</p>
                     <a href="/WebTechProject/details.php?id=<?php  echo $data['id']?>" class="btn btn-success">View Details</a>
               </div>

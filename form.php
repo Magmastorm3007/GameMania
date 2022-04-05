@@ -83,7 +83,7 @@ if(isset($_POST['button1'])) {
                   </div>
                   <div class="col-md-9 pe-5">
     
-                    <input type="text" class="form-control form-control-lg" name="title" placeholder="Game Title" />
+                    <input type="text" class="form-control form-control-lg" name="title" required="true" placeholder="Game Title" />
     
                   </div>
                 </div>
@@ -98,22 +98,38 @@ if(isset($_POST['button1'])) {
                   </div>
                   <div class="col-md-9 pe-5">
     
-                    <input type="text" class="form-control form-control-lg" name="year" placeholder="Year" />
+                    <input type="text" class="form-control form-control-lg" required="true" name="year" placeholder="Year" />
     
                   </div>
                 </div>
+                <hr class="mx-n3">
+    
+    <div class="row align-items-center py-3">
+      <div class="col-md-3 ps-5">
+
+        <h6 class="mb-0">Short Description</h6>
+
+      </div>
+      <div class="col-md-9 pe-5">
+
+        <input type="text" class="form-control form-control-lg" required="true" name="sd" placeholder="Enter a short description" />
+
+      </div>
+    </div>
+    
+                
     
                 <hr class="mx-n3">
     
                 <div class="row align-items-center py-3">
                   <div class="col-md-3 ps-5">
     
-                    <h6 class="mb-0">Description</h6>
+                    <h6 class="mb-0">Summary</h6>
     
                   </div>
                   <div class="col-md-9 pe-5">
     
-                    <textarea class="form-control" rows="3" placeholder="Enter a brief summary" name="description"></textarea>
+                    <textarea class="form-control" rows="3" placeholder="Enter a brief summary" required="true" name="description"></textarea>
     
                   </div>
                 </div>
@@ -128,7 +144,7 @@ if(isset($_POST['button1'])) {
                   </div>
                   <div class="col-md-9 pe-5">
     
-                    <input class="form-control form-control-lg" id="formFileLg" name="myimage" type="file" />
+                    <input class="form-control form-control-lg" required="true" id="formFileLg" name="myimage" type="file" />
                     <div class="small text-muted mt-2">Upload your CV/Resume or any other relevant file. Max file size 50 MB</div>
     
                   </div>
@@ -137,7 +153,7 @@ if(isset($_POST['button1'])) {
                 <hr class="mx-n3">
     
                 <div class="px-5 py-4">
-                  <button type="submit" class="btn btn-primary btn-lg">Send application</button>
+                  <button type="submit" class="btn btn-primary btn-lg" data-target="#myModal" data-toggle="modal">Submit</button>
                 </div>
               </form>
               </div>
@@ -147,6 +163,22 @@ if(isset($_POST['button1'])) {
         </div>
       </div>
     </section>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<p><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></p>
+</div>
+<div class="modal-body">
+<h4 class="text-center">Submitted successfully</h4>
+
+</div>
+<div class="modal-footer">
+
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 </body>
 </html>
       
@@ -162,3 +194,8 @@ form{
     all:unset;
 }
     </style>
+<script>
+  $("#s").click(function() {
+   alert("The Form has been Submitted.");
+});
+  </script>

@@ -69,7 +69,7 @@ include("fetch.php");
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-xl-9">
     
-            <h1 class="text-black mb-4">Update the game entry</h1>
+            <h1 class="text-black mb-4">Update Game Entry</h1>
     
             <div class="card" style="border-radius: 15px;">
               <div class="card-body">
@@ -77,16 +77,13 @@ include("fetch.php");
                 <div class="row align-items-center pt-4 pb-3">
                   <div class="col-md-3 ps-5">
                     <form method="POST" action="alter.php" enctype="multipart/form-data">
-                      
-                    
     
-                    <h6 class="mb-0">Title to be updated</h6>
+                    <h6 class="mb-0">Title to be Updated</h6>
     
                   </div>
-                  
                   <div class="col-md-9 pe-5">
     
-                    <input type="text" class="form-control form-control-lg" name="title" placeholder="Game Title" />
+                    <input type="text" class="form-control form-control-lg" name="title" required="true" placeholder="Game Title" />
     
                   </div>
                 </div>
@@ -101,22 +98,38 @@ include("fetch.php");
                   </div>
                   <div class="col-md-9 pe-5">
     
-                    <input type="text" class="form-control form-control-lg" name="year" placeholder="Year" />
+                    <input type="text" class="form-control form-control-lg" required="true" name="year" placeholder="Year" />
     
                   </div>
                 </div>
+                <hr class="mx-n3">
+    
+    <div class="row align-items-center py-3">
+      <div class="col-md-3 ps-5">
+
+        <h6 class="mb-0">Short Description</h6>
+
+      </div>
+      <div class="col-md-9 pe-5">
+
+        <input type="text" class="form-control form-control-lg" required="true" name="sd" placeholder="Enter a short description" />
+
+      </div>
+    </div>
+    
+                
     
                 <hr class="mx-n3">
     
                 <div class="row align-items-center py-3">
                   <div class="col-md-3 ps-5">
     
-                    <h6 class="mb-0">Description</h6>
+                    <h6 class="mb-0">Summary</h6>
     
                   </div>
                   <div class="col-md-9 pe-5">
     
-                    <textarea class="form-control" rows="3" placeholder="Enter a brief summary" name="description"></textarea>
+                    <textarea class="form-control" rows="3" placeholder="Enter a brief summary" required="true" name="description"></textarea>
     
                   </div>
                 </div>
@@ -131,7 +144,7 @@ include("fetch.php");
                   </div>
                   <div class="col-md-9 pe-5">
     
-                    <input class="form-control form-control-lg" id="formFileLg" name="myimage" type="file" />
+                    <input class="form-control form-control-lg" required="true" id="formFileLg" name="myimage" type="file" />
                     <div class="small text-muted mt-2">Upload your CV/Resume or any other relevant file. Max file size 50 MB</div>
     
                   </div>
@@ -140,7 +153,7 @@ include("fetch.php");
                 <hr class="mx-n3">
     
                 <div class="px-5 py-4">
-                  <button type="submit" class="btn btn-primary btn-lg">Send application</button>
+                  <button type="submit" class="btn btn-primary btn-lg">Update</button>
                 </div>
               </form>
               </div>

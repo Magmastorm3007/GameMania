@@ -9,12 +9,12 @@ $imagename=$_FILES["myimage"]["name"];
 $title=$_POST['title'];
 $year=$_POST['year'];
 $desc=$_POST['description'];
-
+$sd=$_POST['sd'];
 
 //Get the content of the image and then add slashes to it 
 $imagetmp=addslashes (file_get_contents($_FILES['myimage']['tmp_name']));
 $target = "image/".basename($imagename);
-$insert="UPDATE details set  imgname ='$imagename',year ='$year', description='$desc' WHERE name='$title' ";
+$insert="UPDATE details set  imgname ='$imagename',year ='$year', description='$desc',sd='$sd' WHERE name='$title' ";
 if(mysqli_query($conn,$insert)){
     header("location: admin.php");
 }
