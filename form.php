@@ -46,15 +46,15 @@ if(isset($_POST['button1'])) {
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <span class="title"><b>GameMania</b></span>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="pg" href="#">Home</a>
-          </li>
-          <li class="nav-item active">
-              <a class="pg" href="#">About us</a>
-            </li>
-          <li class="nav-item">
-            <a class="pg" href="#">Contact Us</a>
-          </li>
+        <li class="nav-item active">
+                  <a class="pg" href="./index.php">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="pg" href="./Aboutus.html">About us</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="pg" href="./ContactUs.html">Contact Us</a>
+                </li>
           <li>
             
             <a class="pg"><form method="post"><button input type="submit"  class="btn btn-link" id="bt" name="button1">Sign Out</button></form></a>
@@ -163,22 +163,7 @@ if(isset($_POST['button1'])) {
         </div>
       </div>
     </section>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<p><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></p>
-</div>
-<div class="modal-body">
-<h4 class="text-center">Submitted successfully</h4>
-
-</div>
-<div class="modal-footer">
-
-</div>
-</div><!-- /.modal-content -->
-</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+   
 </body>
 </html>
       

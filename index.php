@@ -15,14 +15,14 @@ include("fetch.php");
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
               <span class="title"><b>GameMania</b></span>
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a class="pg" href="#">Home</a>
+              <li class="nav-item active">
+                  <a class="pg" href="./index.php">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="pg" href="#">About us</a>
+                    <a class="pg" href="./Aboutus.html">About us</a>
                   </li>
                 <li class="nav-item">
-                  <a class="pg" href="#">Contact Us</a>
+                  <a class="pg" href="./ContactUs.html">Contact Us</a>
                 </li>
                 <li class="nav-item">
                   <a class="pg" href="./login.php">Login</a>
@@ -131,7 +131,7 @@ include("fetch.php");
     {   
         var page = document.getElementById("page").value;   
         page = ((page><?php echo $total_pages; ?>)?<?php echo $total_pages; ?>:((page<1)?1:page));   
-        window.location.href = 'index1.php?page='+page;   
+        window.location.href = 'index.php?page='+page;   
     }   
   </script>  
     </body>
@@ -166,6 +166,6 @@ include("fetch.php");
             background-color: pink;   
     }   
     .pagination a:hover:not(.active) {   
-        background-color: skyblue;   
+        background-color:#bd2b51;   
     }   
         </style>   

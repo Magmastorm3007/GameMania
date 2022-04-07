@@ -46,15 +46,15 @@ include("fetch.php");
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <span class="title"><b>GameMania</b></span>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="pg" href="#">Home</a>
-          </li>
-          <li class="nav-item active">
-              <a class="pg" href="#">About us</a>
-            </li>
-          <li class="nav-item">
-            <a class="pg" href="#">Contact Us</a>
-          </li>
+        <li class="nav-item active">
+                  <a class="pg" href="./index.php">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="pg" href="./Aboutus.html">About us</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="pg" href="./ContactUs.html">Contact Us</a>
+                </li>
           <li>
             
             <a class="pg"><form method="post"><button input type="submit"  class="btn btn-link" id="bt" name="button1">Sign Out</button></form></a>

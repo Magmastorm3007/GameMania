@@ -18,7 +18,7 @@
                     <a class="pg" href="./Aboutus.html">About us</a>
                   </li>
                 <li class="nav-item">
-                  <a class="pg" href="//ContactUs.html">Contact Us</a>
+                  <a class="pg" href="./ContactUs.html">Contact Us</a>
                 </li>
                 <li class="nav-item">
                   <a class="pg" href="./login.php">Login</a>
